@@ -1,0 +1,158 @@
+.wrapper{
+    position: relative;
+    width: 420px;
+    height: 450px;
+    background: seagreen;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: height .2s ease;
+}
+
+.wrapper.wrapper.active {
+    height: 520px;
+}
+
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper .form-box.login {
+    transition: translate .18s ease; /* Change made here */
+    translate:0; /* Change made here */
+}
+
+.wrapper.active .form-box.login {
+    transition: none;
+    translate: -400px;
+}
+
+.wrapper .form-box.register {
+    position: absolute;
+    transition: none;
+    translate: 400px; /* Change made here */
+}
+
+.wrapper.active .form-box.register {
+    transition: translate .18s ease; /* Change made here */
+    translate:0; /* Change made here */
+}
+
+form h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+form .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+.role_input {
+    background-color: transparent;
+    border-color: #439768;
+    border-radius: 25px;
+    margin-top: 0px !important;
+    border: 2px solid #439768;
+    color: white;
+    font-weight: 600;
+    padding-left: 16px;
+}
+
+.role_input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent; /* Make the background transparent so the default arrow won't show */
+    background-image: none; /* Explicitly remove any background image */
+    padding-right: 40px; /* Add some space to make sure the icon has room */
+}
+
+/* Fix for Internet Explorer */
+.role_input::-ms-expand {
+    display: none;
+}
+
+.role_value{
+    color: #333;
+    font-weight: 700;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255, 255,.1);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: #fff;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    translate: 0 -50%;
+    font-size: 16px;
+}
+
+form .remember-forget {
+     display: flex;
+     justify-content: space-between;
+     font-size: 14.5px;
+     margin: -15px o 15px;
+}
+
+.remember-forget label input{
+    accent-color: #fff;
+    margin-right: 4px;
+}
+
+.remember-forget a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forget a:hover{
+    text-decoration: underline;
+}
+
+form button{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+}
+
+form .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
